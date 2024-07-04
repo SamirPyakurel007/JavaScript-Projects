@@ -1,0 +1,50 @@
+body{
+  background: black;
+  color:white;
+}
+
+h1{
+  text-align: center;
+}
+
+.container{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  gap:50px;
+  margin:0 auto;
+  flex-wrap: wrap;
+}
+
+.button{
+  height:50px;
+  width:50px;
+  border:none;
+  border-radius:5px;
+}
+
+#violet{
+  background: violet;
+}
+#indigo{
+  background: indigo;
+}
+#blue{
+  background: blue;
+}
+#green{
+  background: green;
+}
+#yellow{
+  background: yellow;
+}
+#orange{
+  background: orange;
+}
+#red{
+  background: red;
+}
+
+h2{
+  text-align:center;
+}

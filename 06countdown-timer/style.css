@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background:black;
+  color:white;
+}
+
+#container{
+  width:100%;
+  max-width:600px;
+  height:600px;
+  margin:auto;
+  background:#2b2b2b;
+}
+
+#container .countdown{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:20px;
+  text-align:center;
+  margin-top:100px;
+}
+
+.time-tabs{
+  background:rgb(2, 2, 33);
+  color:rgb(177, 177, 177);
+}
+
+#time{
+  display:flex;
+  justify-content:center;
+  background:transparent;
+  border:none;
+  width:200px;
+  font-size:30px;
+  color:rgb(177, 177, 177);
+  margin:10px auto 10px;
+}

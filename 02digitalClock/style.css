@@ -1,0 +1,28 @@
+body{
+  background: black;
+  color:white;
+}
+
+.container{
+  text-align: center;
+  margin:auto auto;
+  height:300px;
+  width:300px;
+}
+p{
+  display:block;
+  font-size: 30px;
+}
+
+.clock{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:10px auto;
+  background:orangered;
+  height:100px;
+  width:200px;
+  font-size: 50px;
+  border:none;
+  border-radius:15px;
+}
