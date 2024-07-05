@@ -1,0 +1,96 @@
+body{
+  --theme-color:orangered;
+  --bg-color:white;
+  --text-color:black;
+  --button-text-color:var(--bg-color);
+  --transition:1s;
+
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  height:100vh;
+  margin:0;
+  padding:0;
+  transition:var(--transition);
+  overflow:hidden;
+
+  background: var(--bg-color);
+  color:var(--text-color);
+
+}
+body.dark{
+  --theme-color:#d0d066;
+  --bg-color:#333;
+  --text-color:white;
+}
+
+.theme-toggle-button{
+  background: var(--theme-color);
+  color:var(--button-text-color);
+  fill:var(--button-text-color);
+  font-size:25px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  padding:15px 10px;
+  border:none;
+  border-radius:10px;
+  transition:var(--transition);
+  transform:scale(1);
+}
+
+.theme-toggle-button:hover{
+  transform:scale(1.1);
+}
+
+.toggle-icon{
+  height:40px;
+  width:40px;
+  margin-right:10px;
+}
+
+.title{
+  margin:0;
+  margin-bottom:20px;
+}
+
+.container{
+  --rotation:0;
+  position:absolute;
+  top:0;
+  height:200vmin;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transform:rotate(calc(var(--rotation)*1deg));
+  transition:transform, var(--transition);
+}
+
+.sun,
+.moon{
+  position:absolute;
+  height:40px;
+  width:40px;
+  transition: opacity, fill, var(--transition);
+  fill:var(--theme-color);
+}
+
+.sun{
+  top:5%;
+}
+
+.dark .sun{
+  opacity:0;
+}
+
+.moon{
+  bottom:5%;
+  opacity:0;
+  transform:rotate(180deg);
+}
+
+.dark .moon{
+  opacity:1;
+}
